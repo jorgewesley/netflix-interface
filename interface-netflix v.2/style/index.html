@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <title>Document</title>
+
+
+    <style>
+:root{
+    --vermelho: red;
+    --preta: rgb(24, 23, 23);
+}
+
+*{
+    margin:0;
+    padding:0;  
+    box-sizing: border-box;
+  }
+
+  /*Elemento Base*/
+  body{
+      background: var(--preta);
+      font-family:'Times New Roman', Times, serif ;
+      color: #fff;
+  }
+
+  header .container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+  }
+
+
+  header .logo{
+    color: var(--vermelho);
+    font-family: 'ariel black', times;
+    font-size: 40px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50)100%),url('/style/images.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Serias</a>
+            <a href="#">Filmes</a>
+            <a href="#">Documentários</a>
+         
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="Filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao"> Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
+                <div class="butoes">
+                    <button role="button" class="botao">
+                        ASSITIR AGORA 
+                    </button>
+                    <button role="button" class="butao">
+                        MAIS INFORMAÇÕES 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+</body>
+</html>
+
